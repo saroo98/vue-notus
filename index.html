@@ -12,14 +12,14 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="h-screen ">
+<body class="h-screen w-screen overflow-x-hidden ">
 
-    <div>
+    <div class="">
 
 <!-- ====================== NavBar ========================= -->
 
         <div class="h-96 w-screen bg-cover bg-local transform -rotate-1	" style="background-image:linear-gradient(rgba(37, 35, 35, 0.9), rgba(37, 35, 35, 0.9)), url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80)">
-        <header class="transform rotate-1  flex py-5 pt-2 px-6 justify-between align-middle text-center">
+        <nav class="transform rotate-1  flex py-5 pt-2 px-6 justify-between align-middle text-center">
             <div class=" uppercase font-bold text-sm text-white self-center justify-between align-middle">
                 <a href="#">Vue notus</a>
             </div>
@@ -32,7 +32,7 @@
             </button>
         </a>
         </div>
-        </header>
+    </nav>
         
 <!-- ====================== Header ========================= -->
 
@@ -50,10 +50,10 @@
 
 <!-- ====================== Main ========================= -->
 
-<section class=" bg-gray-200 w-screen pb-20 flex">
+<section class=" bg-gray-200 w-screen  pb-20 flex">
 <div class="flex mx-auto px-4 -mt-5 w-screen align-middle justify-center text-center flex-col md:flex-row md\:flex-wrap">
 
-    
+
 <!-- ====================== Cards ========================= -->
 
 <div class=" flex flex-col items-center justify-between relative h-56 md:w-56 mx-4 shadow-lg rounded-xl mb-10 bg-white">
@@ -110,12 +110,53 @@
 
 </div>
 </div>
-</div>
 
-<div>
-    <!-- Text and Photo -->
-</div>
 </section>
+
+<section class=" bg-gray-200 w-screen pb-20 pl-8 pr-8 flex">
+<div class="flex flex-col mx-auto">
+
+    <div class="flex flex-col md:flex-row">
+        
+        <div class="md:pl-24 ">
+            <div>
+                <div class="h-16 w-16 bg-white rounded-full relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 absolute top-4 left-5 fill-current text-gray-500" viewBox="0 0 21 20" fill="currentColor">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+              </svg></div>
+            </div>
+            <div class="py-4">
+                <h2 class="text-3xl font-semibold text-gray-800 leading-normal">Working with us is a pleasure
+                </h2>
+            </div>
+            <div>
+                <p class="leading-relaxed text-gray-700	">
+                    Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.
+                </p>
+                <p class="leading-relaxed text-gray-700 py-3 pb-5">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. Just make sure you enable them first via JavaScript.</p>
+            </div>
+            <div>
+                <a href="#" class="font-bold text-gray-800">Check Vue Notus!</a>
+            </div>
+        </div>
+        <div class="md:pr-24 md:pl-20 ">
+            <div class=" pt-2 "><img class="md:h-60 md:w-96 rounded-t-lg" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="">
+            </div>
+            <div class="bg-green-500 h-48 p-8 rounded-b-lg -mt-1 md:h-52 md:w-96 ">
+            <div>
+                <h3 class="text-lg font-bold text-white">Top Notch Services
+                </h3>
+            </div>
+            <div class="pt-2 ">
+                <p class=" text-gray-100 font-thin">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
 
 </div>
 </body>
