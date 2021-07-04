@@ -1,0 +1,25 @@
+{
+  "name": "saro-vue-notus",
+  "version": "0.0.2",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist .parcel-cache",
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "parcel:watch": "parcel watch ./src/index.html",
+    "pretty": "prettier --write --config .prettierrc.json {**/*,*}.{js,html} --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^0.13.1",
+    "parcel": "2.0.0-beta.3.1",
+    "postcss": "8.3.5",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "posthtml-expressions": "1.7.1",
+    "posthtml-include": "1.7.1",
+    "posthtml-load-config": "2.0.0",
+    "prettier": "^2.3.2",
+    "tailwindcss": "2.1.4"
+  }
+}
