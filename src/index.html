@@ -2,13 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <title>tailwindcss-parcel-boilerplate</title>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
   </head>
-  <body class="flex items-center justify-center min-h-screen font-sans text-white bg-cover bg-special">
-    <include src="./partials/header.html"></include>
-    <script src="./assets/js/index.js"></script>
+  <body class="h-screen w-screen overflow-x-hidden">
+    <div>
+      <include src="./partials/navbar.html"></include>
+      <include src="./partials/sectionone.html"></include>
+      <include src="./partials/sectiontwo.html"></include>
+      <include src="./partials/sectionthree.html"></include>
+      <include src="./partials/sectionfour.html"></include>
+      <include src="./partials/sectionfive.html"></include>
+      <script src="./assets/js/index.js"></script>
+    </div>
   </body>
 </html>
