@@ -1,31 +1,81 @@
 <!-- ====================== NavBar ========================= -->
 
-<div
-  class="h-96 w-screen bg-cover bg-local transform -rotate-1"
-  style="background-image: linear-gradient(rgba(37, 35, 35, 0.9), rgba(37, 35, 35, 0.9)), url(../images/team.jpg)"
->
-  <nav class="transform rotate-1 flex py-5 pt-2 px-6 justify-between align-middle text-center">
-    <div class="uppercase font-bold text-sm text-white self-center justify-between align-middle">
-      <a href="#">Vue notus</a>
-    </div>
-    <div class="self-center">
-      <a href="#">
-        <button class="border rounded py-1 px-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current text-white" viewBox="0 0 20 20">
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
+<div class="h-96 w-screen bg-cover bg-local"
+  style="background-image: linear-gradient(rgba(37, 35, 35, 0.9), rgba(37, 35, 35, 0.9)), url(../images/team.jpg)">
+  <nav class="flex py-5 pt-2 px-6 justify-between align-middle text-center">
+    <div class="flex md:ml-28 ">
+      <div class=" uppercase font-bold text-sm text-white self-center align-middle">
+        <a href="#">Vue notus</a>
+      </div>
+      <div class=" place-items-center hidden md:flex	ml-6">
+        <div class=" ">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
-        </button>
-      </a>
+        </div>
+        <div class="uppercase font-bold text-xs text-white self-center align-middle ml-1">docs</div>
+      </div>
     </div>
+
+    <div class="hidden md:flex p-3 px-14 mr-12 -mt-1 items-center">
+      <div>
+        <div class=" text-white font-bold text-xs uppercase mr-6">Demo Pages</div>
+      </div>
+      <div class="mr-6 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-white rounded-full " fill="currentColor"  width="21" height="21" x="0" y="0"
+          viewBox="0 0 16 16">
+          <path
+            d="M7.5 1A6.508 6.508 0 001 7.5C1 11.084 3.916 14 7.5 14S14 11.084 14 7.5 11.084 1 7.5 1zm0 1C10.543 2 13 4.457 13 7.5a5.488 5.488 0 01-4.688 5.434V9.09h1.553l.244-1.576H8.313V6.65c0-.655.213-1.236.826-1.236h.984V4.037c-.173-.023-.538-.074-1.23-.074-1.444 0-2.291.763-2.291 2.5v1.049H5.117V9.09h1.487v3.83A5.487 5.487 0 012 7.5C2 4.457 4.457 2 7.5 2z">
+          </path>
+        </svg>
+
+      </div>
+      <div class="mr-6 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-white rounded-full " fill="currentColor" width="21" height="21" x="0" y="0"
+          viewBox="0 0 16 16">
+          <path
+            d="M15 3.297c-.523.226-1.05.394-1.633.45a3.01 3.01 0 001.281-1.52 5.447 5.447 0 01-1.804.675C12.258 2.34 11.5 2 10.684 2c-1.575 0-2.86 1.242-2.86 2.766 0 .222 0 .449.059.62-3.008 0-5.07-1.695-6.469-3.386-.293.395-.41.902-.41 1.41 0 .957.527 1.805 1.285 2.313-.469-.055-.934-.168-1.285-.336v.054A2.76 2.76 0 003.28 8.148c-.234.055-.469.114-.761.114-.172 0-.348 0-.524-.055.352 1.129 1.98 2.426 3.262 2.426C4.266 11.363 3.344 12 1.5 12H1c1.281.79 2.8 1 4.375 1 5.309 0 8.168-4.23 8.168-7.898v-.336c.582-.399 1.05-.903 1.457-1.47">
+          </path>
+        </svg>
+      </div>
+      <div class="mr-6 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-white rounded-full " fill="currentColor" width="21" height="21" x="0" y="0"
+          viewBox="0 0 16 16">
+          <path
+            d="M7.5 1C3.91 1 1 3.906 1 7.488c0 2.867 1.863 5.301 4.445 6.16.325.059.555-.273.555-.523 0-.152.004-.336 0-.875-1.809.39-2.375-.875-2.375-.875-.297-.75-.656-.965-.656-.965-.59-.402.043-.39.043-.39.652.043.988.605.988.605.5.875 1.629.79 2 .625 0-.398.043-.688.152-.871C4.11 10.019 2.996 8.839 3 7.207c.004-.965.336-1.715.875-2.27-.234-.296-.395-1.312.086-1.937 1.207 0 1.926.871 1.926.871s.566-.246 1.61-.246c1.046 0 1.608.234 1.608.234S9.828 3 11.035 3c.48.625.32 1.64.133 1.918.516.543.832 1.293.832 2.289 0 1.633-1.11 2.813-3.148 3.168.128.195.148.469.148.875v1.875c0 .25.227.586.559.523A6.497 6.497 0 0014 7.488C14 3.906 11.09 1 7.5 1z">
+          </path>
+        </svg>
+      </div>
+      <div class="mr-6">
+        <a class="h-7 w-28 rounded bg-white uppercase text-xs font-bold flex flex-row items-center align-middle justify-center py-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span>Download</span>
+        </a>
+      </div>
+    </div>
+
+    <div class=" md:hidden flex">
+
+        <a class=" border rounded p-2 px-3 ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-white " viewBox="2 2 15 15">
+            <path fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clipRule="evenodd" />
+          </svg>
+        </a>
+
+    </div>
+
   </nav>
 
   <!-- ====================== Header ========================= -->
 
-  <div class="flex flex-col justify-center transform rotate-1 text-center px-10 text-white">
+  <div class="flex flex-col items-center text-center px-10 text-white">
     <div>
       <p class="text-4xl sm:text-5xl font-semibold">Your story starts with us.</p>
     </div>
